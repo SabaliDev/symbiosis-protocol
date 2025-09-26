@@ -1,0 +1,28 @@
+[package]
+name = "symbiosis_registry"
+version = "0.1.0"
+edition = "2024_07"
+
+# See more keys and their definitions at https://docs.swmansion.com/scarb/docs/reference/manifest.html
+
+[dependencies]
+starknet = ">=2.4.0"
+openzeppelin = { git = "https://github.com/OpenZeppelin/cairo-contracts.git", tag = "v0.8.1" }
+
+[dev-dependencies]
+cairo_test = "2.12.2"
+
+
+
+[[target.starknet-contract]]
+sierra = true
+casm = true
+
+[tool.snforge]
+# Add this for testing with starknet foundry
+exit_first = true
+
+[scripts]
+test = "scarb cairo-test"
+build = "scarb build"
+format = "scarb fmt"
