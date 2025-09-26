@@ -1,0 +1,40 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Cairo / Scarb
+target/
+*.sierra.json
+*.casm.json
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.cache/
+
+# Env files
+.env
+.env.*.local
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+*.iml
+
+# OS / Misc
+Thumbs.db
